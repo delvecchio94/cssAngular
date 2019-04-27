@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/*Globales*/
+@import 'css/mixins';
+@import 'css/variables';
+/*particulares*/
+@import 'css/header';
+@import 'css/footer';
+@import 'css/section';
+
+
+body {
+    @include reset();
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #DADADA;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 980px;
+}

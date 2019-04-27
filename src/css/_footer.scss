@@ -1,4 +1,24 @@
 .footer{
     background-color: black;
+    box-sizing: border-box;
+    grid-area: footer;
     height: 100px;
+    padding: 20px 10px;
+    .icons{
+        @include reset();
+        display: flex;
+        flex-direction: row-reverse;
+        .icon-item{
+            @include reset();
+            list-style-type: none;
+            margin-right: 20px;
+            .icon-item-link{
+                color: white;
+                font-size: 35px;
+                .icon{
+
+                }
+            }
+        }
+    }
 }

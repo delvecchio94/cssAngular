@@ -1,0 +1,32 @@
+aside{
+    grid-area: aside;
+    background: #f8e4e4;
+    .nav{
+        .list{
+            @include reset();
+            .item{
+                .link{
+                    color: $links;
+                    display: block;
+                    padding: 10px 20px;
+                    transition: background 1s;
+                }
+                .link:hover{
+                    background: #dddddd;
+                }
+            }
+            .item:last-child{
+                .link{
+                    border-right: none;
+                }
+            }
+            
+        }
+    }
+}
+@include mobile{
+    aside{
+        display: none;
+    }
+    
+}

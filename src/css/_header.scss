@@ -3,42 +3,11 @@
     background-color: white;
     box-shadow: 0 3px 5px #393f484d;
     padding: 10px 0px;
-    position: fixed;
     width: 100%;
-    z-index: 1;
-    .container{
-        display: flex;
-        justify-content: space-between;
+    grid-area: header;
         .logo{
             @include reset();
             color: $main-color;
             padding-left: 10px;
         }
-        .nav{
-            .list{
-                @include reset();
-                display: flex;
-                list-style-type: none;
-                padding-top: 10px;
-                .item{
-                    .link{
-                        border-right: 1px #DFDFDF solid;
-                        color: $links;
-                        padding: 10px 20px;
-                        transition: background 1s;
-                    }
-                    .link:hover{
-                        background: #dddddd;
-                    }
-                }
-                .item:last-child{
-                    .link{
-                        border-right: none;
-                    }
-                }
-                
-            }
-        }
-    }
-    
 }
